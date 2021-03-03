@@ -1,0 +1,86 @@
+:root {
+    --ff-primary: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* ADD YOUR CODE BELOW */
+    font-size: 20px;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--ff-primary);
+    text-align: center;
+}
+
+span {
+    display: block;
+}
+
+h1 {
+    /* ADD YOUR CODE BELOW */
+    font-size: 2em;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+}
+h1 > * {
+    margin: 0 .3em;
+    box-sizing: border-box;
+}
+.responsive-header-img {
+    /* ADD YOUR CODE BELOW */
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.responsive-cat-img {
+    /* ADD YOUR CODE BELOW */
+  width: 90%;
+  max-width: 90%;
+  margin: 4px auto;
+  height: auto;
+}
+
+@media screen and (min-width: 600px) {
+    /* ADD YOUR CODE BELOW */
+    .all-cats{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .responsive-cat-img {
+        /* ADD YOUR CODE BELOW */
+      width: 49%;
+      max-width: 49%;
+      margin: 4px auto;
+      height: auto;
+    }
+} 
+
+@media screen and (min-width: 768px) {
+    /* ADD YOUR CODE BELOW */
+    .responsive-cat-img {
+        /* ADD YOUR CODE BELOW */
+      width: 32%;
+      max-width: 32%;
+      margin: 4px auto;
+      height: auto;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    /* ADD YOUR CODE BELOW */
+    .responsive-cat-img {
+        /* ADD YOUR CODE BELOW */
+      width: 24%;
+      max-width: 24%;
+      margin: 4px auto;
+      height: auto;
+    }
+}
